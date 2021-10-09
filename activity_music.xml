@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".Music_Activity"
+    tools:context=".MusicActivity"
     android:gravity="center"
     android:orientation="vertical">
     <ImageView
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="歌曲名"
         android:textSize="20sp"/>
+
     <SeekBar
         android:id="@+id/sb"
         android:layout_width="match_parent"
@@ -44,41 +45,62 @@
             android:text="00:00"/>
     </RelativeLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/pre"
+            android:text="上"
+            android:layout_marginRight="10dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_pause"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/btn_bg_selector"-->
+<!--        android:text="||"/>-->
+
+        <!--    <Button-->
+<!--        android:id="@+id/btn_continue_play"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/btn_bg_selector"-->
+<!--        android:text="继续"/>-->
         <Button
             android:id="@+id/btn_play"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="8dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
             android:layout_weight="1"
-            android:background="@drawable/btn_bg_selector"
-            android:text="播放"/>
+            android:background="@drawable/pre"
+            android:text="开始" />
+
         <Button
-            android:id="@+id/btn_pause"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn_bg_selector"
-            android:text="暂停"/>
+            android:id="@+id/btn_next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/next"
+            android:text="下"
+            android:layout_marginLeft="10dp"
+            />
         <Button
-            android:id="@+id/btn_continue_play"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn_bg_selector"
-            android:text="继续"/>
-        <Button
-            android:id="@+id/btn_exit"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn_bg_selector"
-            android:text="退出"/>
-    </LinearLayout>
+            android:id="@+id/playmode"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:text="顺序"/>
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg_selector"
+        android:text="退出"/>
+</LinearLayout>
 
 </LinearLayout>
